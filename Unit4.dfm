@@ -1,9 +1,9 @@
 object Form4: TForm4
-  Left = 355
-  Top = 137
+  Left = 251
+  Top = 232
   Width = 928
   Height = 480
-  Caption = 'Form4'
+  Caption = 'TABEL SUPPLIER'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,6 +11,7 @@ object Form4: TForm4
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object l1: TLabel
@@ -89,8 +90,8 @@ object Form4: TForm4
   object dbgrd1: TDBGrid
     Left = 12
     Top = 260
-    Width = 761
-    Height = 157
+    Width = 893
+    Height = 181
     DataSource = ds1
     TabOrder = 3
     TitleFont.Charset = DEFAULT_CHARSET
@@ -98,23 +99,23 @@ object Form4: TForm4
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
     Columns = <
       item
         Expanded = False
-        FieldName = 'id_pelanggan'
-        Width = 98
+        FieldName = 'id_supplier'
         Visible = True
       end
       item
         Expanded = False
-        FieldName = 'nm_pelanggan'
-        Width = 132
+        FieldName = 'nm_supplier'
+        Width = 155
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'alamat'
-        Width = 112
+        Width = 191
         Visible = True
       end
       item
@@ -130,6 +131,7 @@ object Form4: TForm4
     Height = 29
     Caption = 'Baru'
     TabOrder = 4
+    OnClick = b1Click
   end
   object b2: TButton
     Left = 224
@@ -138,6 +140,7 @@ object Form4: TForm4
     Height = 33
     Caption = 'Simpan'
     TabOrder = 5
+    OnClick = b2Click
   end
   object b3: TButton
     Left = 332
@@ -146,6 +149,7 @@ object Form4: TForm4
     Height = 33
     Caption = 'Edit'
     TabOrder = 6
+    OnClick = b3Click
   end
   object b4: TButton
     Left = 432
@@ -154,6 +158,7 @@ object Form4: TForm4
     Height = 33
     Caption = 'Hapus'
     TabOrder = 7
+    OnClick = b4Click
   end
   object b5: TButton
     Left = 540
@@ -162,6 +167,7 @@ object Form4: TForm4
     Height = 33
     Caption = 'Batal'
     TabOrder = 8
+    OnClick = b5Click
   end
   object b6: TButton
     Left = 644
@@ -170,6 +176,7 @@ object Form4: TForm4
     Height = 33
     Caption = 'Print'
     TabOrder = 9
+    OnClick = b6Click
   end
   object e_4: TEdit
     Left = 320

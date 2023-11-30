@@ -3,7 +3,7 @@ object Form2: TForm2
   Top = 201
   Width = 928
   Height = 480
-  Caption = 'Form2'
+  Caption = 'MAIN MENU'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -22,6 +22,10 @@ object Form2: TForm2
       object abelPelanggan1: TMenuItem
         Caption = 'Tabel Pelanggan'
         OnClick = abelPelanggan1Click
+      end
+      object abelSupplier1: TMenuItem
+        Caption = 'Tabel Supplier'
+        OnClick = abelSupplier1Click
       end
     end
   end

@@ -1,6 +1,6 @@
 object Form5: TForm5
-  Left = 301
-  Top = 223
+  Left = 285
+  Top = 137
   Width = 928
   Height = 480
   Caption = 'Form5'
@@ -89,8 +89,8 @@ object Form5: TForm5
   object dbgrd1: TDBGrid
     Left = 12
     Top = 260
-    Width = 761
-    Height = 157
+    Width = 885
+    Height = 173
     DataSource = ds1
     TabOrder = 3
     TitleFont.Charset = DEFAULT_CHARSET
@@ -101,25 +101,23 @@ object Form5: TForm5
     Columns = <
       item
         Expanded = False
-        FieldName = 'id_pelanggan'
-        Width = 98
+        FieldName = 'id_perangkat'
         Visible = True
       end
       item
         Expanded = False
-        FieldName = 'nm_pelanggan'
-        Width = 132
+        FieldName = 'nm_perangkat'
+        Width = 179
         Visible = True
       end
       item
         Expanded = False
-        FieldName = 'alamat'
-        Width = 112
+        FieldName = 'tipe'
         Visible = True
       end
       item
         Expanded = False
-        FieldName = 'telepon'
+        FieldName = 'keluhan'
         Visible = True
       end>
   end

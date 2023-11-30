@@ -1,6 +1,6 @@
 object Form6: TForm6
-  Left = 382
-  Top = 386
+  Left = 342
+  Top = 151
   Width = 928
   Height = 480
   Caption = 'Form6'
@@ -89,8 +89,8 @@ object Form6: TForm6
   object dbgrd1: TDBGrid
     Left = 12
     Top = 260
-    Width = 761
-    Height = 157
+    Width = 893
+    Height = 173
     DataSource = ds1
     TabOrder = 3
     TitleFont.Charset = DEFAULT_CHARSET
@@ -101,25 +101,25 @@ object Form6: TForm6
     Columns = <
       item
         Expanded = False
-        FieldName = 'id_pelanggan'
-        Width = 98
+        FieldName = 'id_teknisi'
         Visible = True
       end
       item
         Expanded = False
-        FieldName = 'nm_pelanggan'
-        Width = 132
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'alamat'
-        Width = 112
+        FieldName = 'nm_teknisi'
+        Width = 146
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'telepon'
+        Width = 151
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'biaya_perbaikan'
+        Width = 173
         Visible = True
       end>
   end
@@ -380,6 +380,7 @@ object Form6: TForm6
   end
   object zqry1: TZQuery
     Connection = con1
+    Active = True
     SQL.Strings = (
       'select * from tbl_teknisi'
       '')

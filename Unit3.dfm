@@ -3,7 +3,7 @@ object Form3: TForm3
   Top = 144
   Width = 928
   Height = 480
-  Caption = 'Form3'
+  Caption = 'TABEL PELANGGAN'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -388,7 +388,6 @@ object Form3: TForm3
   end
   object zqry1: TZQuery
     Connection = con1
-    Active = True
     SQL.Strings = (
       'select * from tbl_pelanggan'
       '')
@@ -400,7 +399,6 @@ object Form3: TForm3
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
-    Connected = True
     HostName = 'Localhost'
     Port = 3306
     Database = 'db_elektro'
