@@ -27,6 +27,10 @@ object Form2: TForm2
         Caption = 'Tabel Supplier'
         OnClick = abelSupplier1Click
       end
+      object abelPerangkat1: TMenuItem
+        Caption = 'Tabel Perangkat'
+        OnClick = abelPerangkat1Click
+      end
     end
   end
 end

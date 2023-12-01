@@ -1,9 +1,9 @@
 object Form5: TForm5
-  Left = 285
-  Top = 137
+  Left = 373
+  Top = 89
   Width = 928
   Height = 480
-  Caption = 'Form5'
+  Caption = 'TABEL PERANGKAT'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,6 +11,7 @@ object Form5: TForm5
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object l1: TLabel
@@ -98,6 +99,7 @@ object Form5: TForm5
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
     Columns = <
       item
         Expanded = False
@@ -128,6 +130,7 @@ object Form5: TForm5
     Height = 29
     Caption = 'Baru'
     TabOrder = 4
+    OnClick = b1Click
   end
   object b2: TButton
     Left = 224
@@ -136,6 +139,7 @@ object Form5: TForm5
     Height = 33
     Caption = 'Simpan'
     TabOrder = 5
+    OnClick = b2Click
   end
   object b3: TButton
     Left = 332
@@ -144,6 +148,7 @@ object Form5: TForm5
     Height = 33
     Caption = 'Edit'
     TabOrder = 6
+    OnClick = b3Click
   end
   object b4: TButton
     Left = 432
@@ -152,6 +157,7 @@ object Form5: TForm5
     Height = 33
     Caption = 'Hapus'
     TabOrder = 7
+    OnClick = b4Click
   end
   object b5: TButton
     Left = 540
@@ -160,6 +166,7 @@ object Form5: TForm5
     Height = 33
     Caption = 'Batal'
     TabOrder = 8
+    OnClick = b5Click
   end
   object b6: TButton
     Left = 644
@@ -168,6 +175,7 @@ object Form5: TForm5
     Height = 33
     Caption = 'Print'
     TabOrder = 9
+    OnClick = b6Click
   end
   object e_4: TEdit
     Left = 320
@@ -378,7 +386,6 @@ object Form5: TForm5
   end
   object zqry1: TZQuery
     Connection = con1
-    Active = True
     SQL.Strings = (
       'select * from tbl_perangkat'
       '')

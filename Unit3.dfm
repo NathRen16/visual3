@@ -1,6 +1,6 @@
 object Form3: TForm3
-  Left = 410
-  Top = 144
+  Left = 380
+  Top = 231
   Width = 928
   Height = 480
   Caption = 'TABEL PELANGGAN'

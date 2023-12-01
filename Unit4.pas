@@ -88,7 +88,7 @@ if e_1.Text='' then
     begin
     ShowMessage('Telepon BELUM DIISI DENGAN BENAR');
     end else
-     if Form3.zqry1.Locate('id_supplier',e_1.Text,[]) then
+     if Form4.zqry1.Locate('id_supplier',e_1.Text,[]) then
   begin
    ShowMessage('DATA SUDAH ADA DALAM SISTEM');
   end else
