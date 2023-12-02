@@ -3,7 +3,7 @@ object Form6: TForm6
   Top = 151
   Width = 928
   Height = 480
-  Caption = 'Form6'
+  Caption = 'TABEL TEKNISI'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,6 +11,7 @@ object Form6: TForm6
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object l1: TLabel
@@ -98,6 +99,7 @@ object Form6: TForm6
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
     Columns = <
       item
         Expanded = False
@@ -130,6 +132,7 @@ object Form6: TForm6
     Height = 29
     Caption = 'Baru'
     TabOrder = 4
+    OnClick = b1Click
   end
   object b2: TButton
     Left = 224
@@ -138,6 +141,7 @@ object Form6: TForm6
     Height = 33
     Caption = 'Simpan'
     TabOrder = 5
+    OnClick = b2Click
   end
   object b3: TButton
     Left = 332
@@ -146,6 +150,7 @@ object Form6: TForm6
     Height = 33
     Caption = 'Edit'
     TabOrder = 6
+    OnClick = b3Click
   end
   object b4: TButton
     Left = 432
@@ -154,6 +159,7 @@ object Form6: TForm6
     Height = 33
     Caption = 'Hapus'
     TabOrder = 7
+    OnClick = b4Click
   end
   object b5: TButton
     Left = 540
@@ -162,6 +168,7 @@ object Form6: TForm6
     Height = 33
     Caption = 'Batal'
     TabOrder = 8
+    OnClick = b5Click
   end
   object b6: TButton
     Left = 644
@@ -170,6 +177,7 @@ object Form6: TForm6
     Height = 33
     Caption = 'Print'
     TabOrder = 9
+    OnClick = b6Click
   end
   object e_4: TEdit
     Left = 320

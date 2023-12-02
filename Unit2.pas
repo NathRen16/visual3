@@ -13,9 +13,11 @@ type
     abelPelanggan1: TMenuItem;
     abelSupplier1: TMenuItem;
     abelPerangkat1: TMenuItem;
+    abelTeknisi1: TMenuItem;
     procedure abelPelanggan1Click(Sender: TObject);
     procedure abelSupplier1Click(Sender: TObject);
     procedure abelPerangkat1Click(Sender: TObject);
+    procedure abelTeknisi1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -27,7 +29,7 @@ var
 
 implementation
 
-uses Unit3, Unit4, Unit5;
+uses Unit3, Unit4, Unit5, Unit6;
 
 {$R *.dfm}
 
@@ -44,6 +46,11 @@ end;
 procedure TForm2.abelPerangkat1Click(Sender: TObject);
 begin
 form5.showmodal;
+end;
+
+procedure TForm2.abelTeknisi1Click(Sender: TObject);
+begin
+form6.showmodal;
 end;
 
 end.
